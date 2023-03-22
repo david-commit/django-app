@@ -1,0 +1,22 @@
+
+=======================
+# CREATE NEW ENV (Python V3.3 and up)
+py -m venv myapp
+
+# Activate ENV (Use CMD, doesn't work on bash)
+.\myapp\Scripts\activate
+
+# Install Django in the new ENV
+pip install django
+
+=======================
+# CREATE DJANGO APP
+django-admin startproject myproject
+
+=======================
+# cd into myproject (must include manage.py) then create new app
+python manage.py startapp myapp
+
+=======================
+# Run server
+python manage.py runserver
